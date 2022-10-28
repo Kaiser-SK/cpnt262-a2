@@ -22,13 +22,14 @@ fieldset{
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   color: black;
   text-shadow: none;
+  font-size: 20px;
 }
 
 legend {
   /* font styling */
   font-variant: small-caps;
   float: left;
-  font-size: 23px;
+  font-size: 40px;
   padding: 1rem;
 }
 
