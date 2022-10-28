@@ -23,7 +23,7 @@ const changeTheme = function() {
   } 
   else if (darkMode.checked) {
     body.classList.replace('default','dark');
-    themeTitle.innerHTML = "Dark Mode";
+    themeTitle.innerHTML = "Dark Theme";
   } 
   // else {
     //   body.classList.replace('dark','light');
