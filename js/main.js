@@ -8,6 +8,7 @@ const themeTitle = document.querySelector('.theme-selection')
 
 const body = document.querySelector('body');
 
+
 const changeTheme = function() {
   if (defaultMode.checked) {
     body.classList.replace('default','default');
@@ -25,10 +26,6 @@ const changeTheme = function() {
     body.classList.replace('default','dark');
     themeTitle.innerHTML = "Dark Theme";
   } 
-  // else {
-    //   body.classList.replace('dark','light');
-  //   themeTitle.innerHTML = "Dark Mode";
-  // }
 }
 
 defaultMode.addEventListener('click', changeTheme);

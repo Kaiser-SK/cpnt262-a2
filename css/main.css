@@ -1,22 +1,31 @@
 body{
+  /* body styling */
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 2rem;
 }
 
 fieldset{
+  /* fieldset positioning */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
   width: 40%;
   
+  /* fieldset styling */
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   border: 3px solid black;
+
+  /* font styling */
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: black;
+  text-shadow: none;
 }
 
 legend {
+  /* font styling */
   font-variant: small-caps;
   float: left;
   font-size: 23px;
@@ -25,6 +34,7 @@ legend {
 
 
 h1{
+  /* text positioning */
   display: block;
   text-align: center;
   padding: 1rem;
@@ -32,6 +42,7 @@ h1{
 }
 
 p{
+  /* text positioning */
   text-indent: 10px;
   max-width: 60%;
   margin: auto;
@@ -39,48 +50,55 @@ p{
 
 
 input {
+  /* custom radio button positioning */
   appearance: none;
-  
+  position: relative;
   border-radius: 40%;
   width: 15px;
   height: 15px;
-  
+  top: 2px;
+  margin-right: 5px;
+
+  /* custom radio button styling */
   border: 2px solid rgb(0, 0, 0);
   transition: 0.3s all linear;
-  margin-right: 5px;
-  
-  position: relative;
-  top: 2px;
 }
 
 input:checked {
-  border: 7px solid black;
+  /* custom radio button styling */
+  border: 6px solid black;
 }
 
 button{
+  /* button positioning */
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+
+  /* button styling */
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 20px;
   background-color: rgb(250, 237, 221);
   border: 2px solid black;
   border-radius: 10px;
   padding: 5px 10px;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
 }
 
 button:hover{
+  /* button hover styling */
   background-color: rgb(213, 190, 163);
   box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.229);
 }
 
 button:active {
+  /* button active styling */
   background-color: rgb(0, 145, 255);
   color: black;
   outline: 1px solid black;
 }
 
 body.dark{
+  /* dark mode styling */
   background: rgb(77,77,77);
   background: radial-gradient(circle, rgba(77,77,77,1) 0%, rgba(26,0,36,1) 93%); 
   font-family: 'Marcellus', serif;
@@ -89,6 +107,7 @@ body.dark{
 }
 
 body.halloween{
+  /* halloween mode styling */
   background: rgb(150,101,0);
   background: radial-gradient(circle, rgba(150,101,0,1) 0%, rgba(98,4,4,1) 34%, rgba(6,3,3,1) 57%, rgba(150,101,0,1) 85%, rgba(98,4,4,1) 100%); 
   font-family: 'Playfair Display SC', serif;
@@ -97,6 +116,7 @@ body.halloween{
 }
 
 body.christmas{
+  /* christmas mode styling */
   background: rgb(25,152,0);
   background: linear-gradient(117deg, rgba(25,152,0,1) 0%, rgba(255,0,0,1) 25%, rgba(7,148,0,1) 50%, rgba(200,26,26,1) 75%, rgba(4,148,19,1) 100%); 
   font-family: 'Fuzzy Bubbles', cursive;
