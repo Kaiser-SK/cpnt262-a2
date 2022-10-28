@@ -11,7 +11,7 @@ fieldset{
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 40%;
+  width: 40ch;
   
   /* fieldset styling */
   background: rgb(238,174,202);
