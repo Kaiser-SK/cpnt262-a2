@@ -16,31 +16,32 @@
   <main>
     <fieldset>
       <legend><strong>Choose A Theme!</strong></legend>
+      <div class="required">*Required</div>
+      <form>
+        <div>
+          <input type="radio" id="default-theme" name="theme-colour" value="default-theme" required>
+          <label for="default-theme">Default Theme</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="halloween-theme" name="theme-colour"value="halloween-theme">
+          <label for="halloween-theme">Halloween Theme</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="christmas-theme" name="theme-colour" value="christmas-theme">
+          <label for="christmas-theme">Christmas Theme</label>
+        </div>
 
-      <div>
-        <input type="radio" id="default-theme" name="theme-colour" value="default-theme"
-        checked>
-        <label for="default-theme">Default Theme</label>
-      </div>
-      
-      <div>
-        <input type="radio" id="halloween-theme" name="theme-colour"value="halloween-theme">
-        <label for="halloween-theme">Halloween Theme</label>
-      </div>
-      
-      <div>
-        <input type="radio" id="christmas-theme" name="theme-colour" value="christmas-theme">
-        <label for="christmas-theme">Christmas Theme</label>
-      </div>
-
-      <div>
-        <input type="radio" id="dark-theme" name="theme-colour" value="dark-theme">
-        <label for="dark-theme">Dark Theme</label>
-      </div>
-
-      <div>
-        <button onclick="changeTheme()" type="submit">Submit</button>
-      </div>
+        <div>
+          <input type="radio" id="dark-theme" name="theme-colour" value="dark-theme">
+          <label for="dark-theme">Dark Theme</label>
+        </div>
+        
+        <div class="submit">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
     </fieldset>
     
     <h1 class="theme-selection">Hello World!</h1>

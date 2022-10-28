@@ -1,5 +1,7 @@
 'use strict';
 
+// TODO: Allow theme change without needing to refresh the page
+
 const defaultMode = document.getElementById('default-theme');
 const darkMode = document.getElementById('dark-theme');
 const halloweenMode = document.getElementById('halloween-theme');
@@ -9,7 +11,8 @@ const themeTitle = document.querySelector('.theme-selection')
 const body = document.querySelector('body');
 
 
-const changeTheme = function() {
+const changeTheme = function(event) {
+  event.preventDefault()
   if (defaultMode.checked) {
     body.classList.replace('default','default');
     themeTitle.innerHTML = "Default Theme";

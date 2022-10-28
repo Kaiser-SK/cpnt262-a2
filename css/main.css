@@ -17,6 +17,7 @@ fieldset{
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   border: 3px solid black;
+  border-radius: 10px;
 
   /* font styling */
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -25,14 +26,19 @@ fieldset{
   font-size: 20px;
 }
 
-legend {
+legend{
   /* font styling */
   font-variant: small-caps;
   float: left;
   font-size: 40px;
-  padding: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
 }
 
+.required{
+  /* font styling */
+  color: red;
+  font-size: 15px;
+}
 
 h1{
   /* text positioning */
@@ -44,9 +50,9 @@ h1{
 
 p{
   /* text positioning */
-  text-indent: 10px;
   max-width: 60%;
   margin: auto;
+  text-align: center;
 }
 
 
@@ -70,11 +76,8 @@ input:checked {
   border: 6px solid black;
 }
 
-button{
-  /* button positioning */
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
 
+button{
   /* button styling */
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -83,6 +86,13 @@ button{
   border-radius: 10px;
   padding: 5px 10px;
   text-transform: uppercase;
+}
+
+.submit{
+  /* button positioning */
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
 button:hover{
