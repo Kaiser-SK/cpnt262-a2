@@ -28,7 +28,4 @@ const changeTheme = function() {
   } 
 }
 
-defaultMode.addEventListener('click', changeTheme);
-darkMode.addEventListener('click', changeTheme);
-halloweenMode.addEventListener('click', changeTheme);
-christmasMode.addEventListener('click', changeTheme);
+body.addEventListener('submit', changeTheme);
