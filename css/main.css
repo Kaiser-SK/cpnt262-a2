@@ -2,3 +2,91 @@ body{
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 40%;
+  
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  border: 3px solid black;
+}
+
+legend {
+  font-variant: small-caps;
+  float: left;
+  font-size: 23px;
+  padding: 1rem;
+}
+
+
+h1{
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  font-size: 50px;
+}
+
+p{
+  text-indent: 10px;
+  max-width: 70ch;
+  margin: auto;
+}
+
+body.dark{
+  background-color: grey;
+}
+
+body.halloween{
+  background-color: orange;
+}
+
+body.christmas{
+  background-color: green;
+}
+
+input {
+  appearance: none;
+  
+  border-radius: 40%;
+  width: 15px;
+  height: 15px;
+  
+  border: 2px solid rgb(0, 0, 0);
+  transition: 0.3s all linear;
+  margin-right: 5px;
+  
+  position: relative;
+  top: 2px;
+}
+
+input:checked {
+  border: 7px solid black;
+}
+
+button{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(250, 237, 221);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+button:hover{
+  background-color: rgb(213, 190, 163);
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.229);
+}
+
+button:active {
+  background-color: yellow;
+  color: black;
+  outline: 1px solid black;
+}
+

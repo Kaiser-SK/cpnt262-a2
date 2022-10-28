@@ -9,37 +9,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./css/main.css">
-  <script src="./js/script.js" defer></script>
+  <script src="./js/main.js" defer></script>
 </head>
-<body>
+<body class="default">
   <main>
     <fieldset>
-      <legend>Choose A Theme Colour For The Page!</legend>
+      <legend><strong>Choose A Theme!</strong></legend>
 
       <div>
-        <input type="radio" id="light-theme" name="theme-colour" value="light-theme"
-                checked>
-        <label for="light-theme">Light Mode</label>
+        <label for="default-theme">
+        <input type="radio" id="default-theme" name="theme-colour" value="default-theme"
+        checked>
+        Default Theme
+        </label>
+      </div>
+      
+      <div>
+        <label for="halloween-theme">
+          <input type="radio" id="halloween-theme" name="theme-colour" value="halloween-theme">
+          Halloween Theme
+        </label>
+      </div>
+      
+      <div>
+        <label for="christmas-theme">
+          <input type="radio" id="christmas-theme" name="theme-colour" value="christmas-theme">
+          Christmas Theme
+        </label>
       </div>
 
       <div>
-        <input type="radio" id="dark-theme" name="theme-colour" value="dark-theme">
-        <label for="dark-theme">Dark Mode</label>
-      </div>
-        
-      <div>
-        <input type="radio" id="halloween-theme" name="theme-colour" value="halloween-theme"
-                checked>
-        <label for="halloween-theme">Halloween Theme</label>
+        <label for="dark-theme">
+          <input type="radio" id="dark-theme" name="theme-colour" value="dark-theme">
+        Dark Mode
+        </label>
       </div>
 
       <div>
-        <input type="radio" id="christmas-theme" name="theme-colour" value="christmas-theme">
-        <label for="christmas-theme">Christmas Theme</label>
+        <button type="submit">Submit</button>
       </div>
     </fieldset>
-
-    <h1>Hello World!</h1>
+    
+    <h1 class="theme-selection">Hello World!</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nihil libero similique illum ratione adipisci temporibus consequatur. Reiciendis, qui excepturi magnam atque necessitatibus eius itaque esse quo, reprehenderit at commodi?
       Architecto veritatis est facere? Sunt blanditiis repellendus voluptatem tenetur eius placeat numquam alias magnam accusantium architecto eligendi totam est neque, explicabo vero, repellat tempore aut. Repudiandae sit minima suscipit saepe.
